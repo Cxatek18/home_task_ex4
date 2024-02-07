@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fragment_navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_fragment_b">FragmetB</string>
+    <string name="text_btn_back">Назад</string>
+    <string name="text_fragment_c">FragmentC</string>
+    <string name="text_fragment_a">FragmentA</string>
+    <string name="text_fragment_d">FragmentD</string>
+</resources>
