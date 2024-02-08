@@ -1,6 +1,7 @@
 package com.team.fragment_navigation
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -41,7 +42,6 @@ class FragmentB : Fragment() {
             requireActivity().supportFragmentManager.popBackStack()
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.main_fragment_container, FragmentA.newInstance())
-                .addToBackStack(null)
                 .commit()
         }
     }

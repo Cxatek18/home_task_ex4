@@ -1,6 +1,7 @@
 package com.team.fragment_navigation
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -52,7 +53,9 @@ class FragmentC : Fragment() {
 
     private fun onClickGoBackFragment() {
         binding.buttonToFragmentA.setOnClickListener {
-            requireActivity().supportFragmentManager.popBackStack()
+            for (it in 0 until requireActivity().supportFragmentManager.backStackEntryCount - 1){
+                requireActivity().supportFragmentManager.popBackStack()
+            }
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.main_fragment_container, FragmentA.newInstance())
                 .commit()
